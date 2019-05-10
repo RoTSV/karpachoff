@@ -1,0 +1,575 @@
+$fnz: 16px;
+$fcol:#222B3A;
+$fcol_blue:#1092CB;
+$bgcol:#296DCE;
+$clrorang:#FC880D;
+$fontcol: #979FAD;
+$font_fam_bolt: 'Proxima Nova Bold', sans-serif;
+$font_fam_semibolt: 'Proxima Nova Semibold', sans-serif;
+$font_fam_exbolt: 'Proxima Nova Extra Bold', sans-serif;
+$font_fam_reg: 'Proxima Nova Regular',sans-serif;
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 ;
+}
+.header{
+    
+    height: 72px;
+    box-shadow: 4px 4px 15px #00000014;
+    .menu_logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .menu_block{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            a{
+                margin-left: 32px;
+                height: 70px;
+                font-family: $font_fam_bolt;
+                color: $fcol;
+                font-size: $fnz;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                &:hover{
+                    border-bottom: 2px solid #FC890D;
+                }   
+            }
+            .user{
+                margin-left: 89px;
+                margin-right: 0;
+                font-size: $fnz;
+                text-decoration: none;
+                color: $fcol;
+                font-family: $font_fam_bolt;
+                &:hover{
+                    border-bottom: none;
+                }  
+                img{
+                    margin-right: 8px;
+                }
+            } 
+        }
+        
+    }
+    
+}
+.academy{
+    height: 512px;
+    background: url(../imgs/child.jpg) no-repeat 100%;
+    background-size: cover;
+    
+    .academy_block{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .academy_block_slide{
+            width: 530px;
+            height: 82px;
+            background: $fcol;
+            border-radius: 3px;
+            position: absolute;
+            left: 0;
+            top: 164px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            p{
+                margin-right: 37px;
+                font-family: 'Intro', sans-serif;
+                font-size: 44px;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+        }
+        .academy_block_text{
+            position: relative;
+            width: 485px;
+            height: 87px;
+            left: 0;
+            top: 175px;
+            p{
+               line-height: 27px;
+               font-family: $font_fam_bolt;
+               font-size: $fnz;
+               color: $fcol;
+            }
+        }
+        .line{
+            position: absolute;
+            top: 390px;
+            width: 435px;
+            height: 15px;
+            background: #F3F3F3;
+            border: 1px solid #F3F3F3;
+            box-sizing: border-box;
+            border-radius: 3px;
+            div{
+                width: 259px;
+                height: 9px;
+                background: linear-gradient(90deg, #0099DD 0%, #178EC2 100%);
+                border-radius: 2px;
+                border: 2px solid #F3F3F3;
+            }
+        }
+        .theme{
+            position: absolute;
+            top: 398px;
+            width: 468px;
+            display: flex;
+            flex-direction: row;
+            div{
+                width: 50%;
+                height: 42px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 5px 0;
+                h3{
+                    font-size: 38px;
+                    font-family:$font_fam_bolt, sans-serif;
+                    color: $fcol;
+                }
+                p{
+                    font-family:$font_fam_semibolt, sans-serif;
+                    font-size: 14px;
+                    color: $fcol;
+                    margin-left: 9px;
+                }
+            } 
+        }
+        h4{
+            position: absolute;
+            top: 510px;
+            font-family: $font_fam_bolt;
+            font-size: $fnz+8px;
+            color: #ffffff;
+        }
+    }
+}
+.cours_menu{
+    height: 47px;
+    background: #FAFAFA;;
+    .cours_menu_block{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        div{
+            width: 22px;
+            height: 0px;
+            border: 1px solid #979FAD;
+            margin: 25px 14px;
+        }
+        p{
+            font-size: $fnz;
+            color: $fontcol;
+            font-family: $font_fam_bolt, sans-serif;
+            
+        }
+        .indent_cours{
+            font-size: $fnz;
+            color: #323232;
+            font-family: $font_fam_bolt, sans-serif;
+        }
+    }
+    
+}
+.objectiv{
+    margin-top: 45px;
+    .objectiv_module{
+        display: flex;
+        flex-direction: column;
+        .objectiv_module_a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+            .line_1{
+                width: 22px;
+                height: 0px;
+                border: 1px solid #222B3A;
+            }
+            .line_2{
+                width: 890px;
+                height: 0px;
+                border: 2px solid #F1F1F1;
+            }
+            h2{
+                font-family: $font_fam_bolt;
+                font-size: 32px;
+                color: #222B3A;
+                margin: 0 6px 0 12px;
+            }
+            i{
+                margin-left: 17px;
+            }
+        }
+        .objectiv_module_block_1{
+            height: 106px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            border-bottom: 1.2px solid #F3F3F3;
+            span{
+                margin-left: 24px;
+                margin-right: 24px;
+                width: 25px;
+                height: 25px;
+                background: #F3F3F3;
+                border-radius: 3px 0px;
+                font-family: $font_fam_bolt;
+                font-size: $fnz;
+                color: $fcol;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p{
+                font-family: $font_fam_bolt;
+                font-size: $fnz;
+                color: $fcol;
+            }
+            .checkbox{
+                position: absolute;
+                right:  82px;
+                input{
+                    display: none;
+                    &:checked + label::before{
+                        content: "\2713";
+                        border-radius: 3px;
+                        font-size: 25px;
+                        color: #f3f3f3;
+                        text-align: center;
+                        background: #1092CB;
+                        display: inline-block;
+                    }
+                }
+                label{
+                    width: 25px;
+                    height: 25px;
+                    display: inline-block;
+                    position: relative;
+                    background: #FAFAFA;
+                    border: 1px solid #DADADA;
+                    box-sizing: border-box;
+                    border-radius: 3px;
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 3px;
+                        box-sizing: border-box;  
+                    }
+                }
+            }
+        } 
+        .objectiv_module_block_2{
+            height: 106px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            border-bottom: 1.2px solid #F3F3F3;
+            span{
+                margin-left: 24px;
+                margin-right: 24px;
+                width: 25px;
+                height: 25px;
+                background: #F3F3F3;
+                border-radius: 3px 0px;
+                font-family: $font_fam_bolt;
+                font-size: $fnz;
+                color: $fcol;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p{
+                font-family: $font_fam_bolt;
+                font-size: $fnz;
+                color: $fcol;
+            }
+            .checkbox_2{
+                position: absolute;
+                right:  82px;
+                input{
+                    display: none;
+                    &:checked + label::before{
+                        content: "\2713";
+                        border-radius: 3px;
+                        font-size: 25px;
+                        color: #f3f3f3;
+                        text-align: center;
+                        background: #1092CB;
+                        display: inline-block;
+                    }
+                }
+                label{
+                    width: 25px;
+                    height: 25px;
+                    display: inline-block;
+                    position: relative;
+                    background: #FAFAFA;
+                    border: 1px solid #DADADA;
+                    box-sizing: border-box;
+                    border-radius: 3px;
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 3px;
+                        box-sizing: border-box;  
+                    }
+                }
+            }
+        } 
+        .objectiv_module_block_3{
+            height: 135px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            border-bottom: 1.2px solid #F3F3F3;
+            span{
+                margin-left: 24px;
+                margin-right: 24px;
+                width: 25px;
+                height: 25px;
+                background: #F3F3F3;
+                border-radius: 3px 0px;
+                font-family: $font_fam_bolt;
+                font-size: $fnz;
+                color: $fcol;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .text{
+                width: 928px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                p{
+                    font-family: $font_fam_bolt;
+                    font-size: $fnz;
+                    color: $fcol;
+                }
+            }
+            .checkbox_3{
+                position: absolute;
+                right:  82px;
+                input{
+                    display: none;
+                    &:checked + label::before{
+                        content: "\2713";
+                        border-radius: 3px;
+                        font-size: 25px;
+                        color: #f3f3f3;
+                        text-align: center;
+                        background: #1092CB;
+                        display: inline-block;
+                    }
+                }
+                label{
+                    width: 25px;
+                    height: 25px;
+                    display: inline-block;
+                    position: relative;
+                    background: #FAFAFA;
+                    border: 1px solid #DADADA;
+                    box-sizing: border-box;
+                    border-radius: 3px;
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 3px;
+                        box-sizing: border-box;  
+                    }
+                }
+            }
+        } 
+        .objectiv_module_block_4{
+            height: 133px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            border-bottom: 1.2px solid #F3F3F3;
+            span{
+                margin-left: 24px;
+                margin-right: 24px;
+                width: 25px;
+                height: 25px;
+                background: #F3F3F3;
+                border-radius: 3px 0px;
+                font-family: $font_fam_bolt;
+                font-size: $fnz;
+                color: $fcol;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p{
+                font-family: $font_fam_bolt;
+                font-size: $fnz;
+                color: $fcol;
+            }
+            .checkbox_4{
+                position: absolute;
+                right:  82px;
+                input{
+                    display: none;
+                    &:checked + label::before{
+                        content: "\2713";
+                        border-radius: 3px;
+                        font-size: 25px;
+                        color: #f3f3f3;
+                        text-align: center;
+                        background: #1092CB;
+                        display: inline-block;
+                    }
+                }
+                label{
+                    width: 25px;
+                    height: 25px;
+                    display: inline-block;
+                    position: relative;
+                    background: #FAFAFA;
+                    border: 1px solid #DADADA;
+                    box-sizing: border-box;
+                    border-radius: 3px;
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 3px;
+                        box-sizing: border-box;  
+                    }
+                }
+            }
+        } 
+    }
+}
+.contacts{
+    margin-top: 76px;
+    width: 100%;
+    height: 350px;
+    background: #0099DD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .contacts_block{
+        width: 79%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "on_scl mtrl inf adr_tel";
+        .online_school{
+            grid-area: on_scl;
+            h4{
+                margin-bottom: 3px;
+                font-family: $font_fam_bolt;
+                font-size: $fnz+8px;
+                color: #FFFFFF;
+            }
+            div{
+                width: 30px;
+                height: 3px;
+                background: #ffffff;
+            }
+            p{
+                margin: 10px 0;
+                font-family: $font_fam_semibolt;
+                font-size: $fnz;
+                color: #FFFFFF; 
+            }
+        }
+        .material{
+            grid-area: mtrl;
+            h4{
+                margin-bottom: 3px;
+                font-family: $font_fam_bolt;
+                font-size: $fnz+8px;
+                color: #FFFFFF;
+            }
+            div{
+                width: 30px;
+                height: 3px;
+                background: #ffffff;
+            }
+            p{
+                margin: 10px 0;
+                font-family: $font_fam_semibolt;
+                font-size: $fnz;
+                color: #FFFFFF; 
+            }
+        }
+        .information{
+            grid-area: inf;
+            h4{
+                margin-bottom: 3px;
+                font-family: $font_fam_bolt;
+                font-size: $fnz+8px;
+                color: #FFFFFF;
+            }
+            div{
+                width: 30px;
+                height: 3px;
+                background: #ffffff;
+            }
+            p{
+                margin: 10px 0;
+                font-family: $font_fam_semibolt;
+                font-size: $fnz;
+                color: #FFFFFF; 
+            }
+        }
+        .adress_tel{
+            grid-area: adr_tel;
+            h4{
+                margin-bottom: 3px;
+                font-family: $font_fam_bolt;
+                font-size: $fnz+8px;
+                color: #FFFFFF;
+            }
+            div{
+                width: 30px;
+                height: 3px;
+                background: #ffffff;
+            }
+            p{
+                margin: 10px 0;
+                font-family: $font_fam_semibolt;
+                font-size: $fnz;
+                color: #FFFFFF; 
+            }
+        }
+    }
+}
+.creator{
+    width: 100%;
+    height: 350px;
+    background: $fcol;
+    height: 47px;
+}

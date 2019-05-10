@@ -1,1 +1,804 @@
-/* No CSS *//*# sourceMappingURL=module.css.map */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.header {
+  height: 72px;
+  -webkit-box-shadow: 4px 4px 15px #00000014;
+          box-shadow: 4px 4px 15px #00000014;
+}
+
+.header .menu_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .menu_logo .menu_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .menu_logo .menu_block a {
+  margin-left: 32px;
+  height: 70px;
+  font-family: "Proxima Nova Bold", sans-serif;
+  color: #222B3A;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.header .menu_logo .menu_block a:hover {
+  border-bottom: 2px solid #FC890D;
+}
+
+.header .menu_logo .menu_block .user {
+  margin-left: 89px;
+  margin-right: 0;
+  font-size: 16px;
+  text-decoration: none;
+  color: #222B3A;
+  font-family: "Proxima Nova Bold", sans-serif;
+}
+
+.header .menu_logo .menu_block .user:hover {
+  border-bottom: none;
+}
+
+.header .menu_logo .menu_block .user img {
+  margin-right: 8px;
+}
+
+.academy {
+  height: 512px;
+  background: url(../imgs/child.jpg) no-repeat 100%;
+  background-size: cover;
+}
+
+.academy .academy_block {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.academy .academy_block .academy_block_slide {
+  width: 530px;
+  height: 82px;
+  background: #222B3A;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 164px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.academy .academy_block .academy_block_slide p {
+  margin-right: 37px;
+  font-family: 'Intro', sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.academy .academy_block .academy_block_text {
+  position: relative;
+  width: 485px;
+  height: 87px;
+  left: 0;
+  top: 175px;
+}
+
+.academy .academy_block .academy_block_text p {
+  line-height: 27px;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 16px;
+  color: #222B3A;
+}
+
+.academy .academy_block .line {
+  position: absolute;
+  top: 390px;
+  width: 435px;
+  height: 15px;
+  background: #F3F3F3;
+  border: 1px solid #F3F3F3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.academy .academy_block .line div {
+  width: 259px;
+  height: 9px;
+  background: -webkit-gradient(linear, left top, right top, from(#0099DD), to(#178EC2));
+  background: linear-gradient(90deg, #0099DD 0%, #178EC2 100%);
+  border-radius: 2px;
+  border: 2px solid #F3F3F3;
+}
+
+.academy .academy_block .theme {
+  position: absolute;
+  top: 398px;
+  width: 468px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.academy .academy_block .theme div {
+  width: 50%;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
+}
+
+.academy .academy_block .theme div h3 {
+  font-size: 38px;
+  font-family: "Proxima Nova Bold", sans-serif, sans-serif;
+  color: #222B3A;
+}
+
+.academy .academy_block .theme div p {
+  font-family: "Proxima Nova Semibold", sans-serif, sans-serif;
+  font-size: 14px;
+  color: #222B3A;
+  margin-left: 9px;
+}
+
+.academy .academy_block h4 {
+  position: absolute;
+  top: 510px;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.cours_menu {
+  height: 47px;
+  background: #FAFAFA;
+}
+
+.cours_menu .cours_menu_block {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cours_menu .cours_menu_block div {
+  width: 22px;
+  height: 0px;
+  border: 1px solid #979FAD;
+  margin: 25px 14px;
+}
+
+.cours_menu .cours_menu_block p {
+  font-size: 16px;
+  color: #979FAD;
+  font-family: "Proxima Nova Bold", sans-serif, sans-serif;
+}
+
+.cours_menu .cours_menu_block .indent_cours {
+  font-size: 16px;
+  color: #323232;
+  font-family: "Proxima Nova Bold", sans-serif, sans-serif;
+}
+
+.objectiv {
+  margin-top: 45px;
+}
+
+.objectiv .objectiv_module {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.objectiv .objectiv_module .objectiv_module_a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.objectiv .objectiv_module .objectiv_module_a .line_1 {
+  width: 22px;
+  height: 0px;
+  border: 1px solid #222B3A;
+}
+
+.objectiv .objectiv_module .objectiv_module_a .line_2 {
+  width: 890px;
+  height: 0px;
+  border: 2px solid #F1F1F1;
+}
+
+.objectiv .objectiv_module .objectiv_module_a h2 {
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 32px;
+  color: #222B3A;
+  margin: 0 6px 0 12px;
+}
+
+.objectiv .objectiv_module .objectiv_module_a i {
+  margin-left: 17px;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_1 {
+  height: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  border-bottom: 1.2px solid #F3F3F3;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_1 span {
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 25px;
+  height: 25px;
+  background: #F3F3F3;
+  border-radius: 3px 0px;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 16px;
+  color: #222B3A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_1 p {
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 16px;
+  color: #222B3A;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_1 .checkbox {
+  position: absolute;
+  right: 82px;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_1 .checkbox input {
+  display: none;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_1 .checkbox input:checked + label::before {
+  content: "\2713";
+  border-radius: 3px;
+  font-size: 25px;
+  color: #f3f3f3;
+  text-align: center;
+  background: #1092CB;
+  display: inline-block;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_1 .checkbox label {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  position: relative;
+  background: #FAFAFA;
+  border: 1px solid #DADADA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_1 .checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_2 {
+  height: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  border-bottom: 1.2px solid #F3F3F3;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_2 span {
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 25px;
+  height: 25px;
+  background: #F3F3F3;
+  border-radius: 3px 0px;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 16px;
+  color: #222B3A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_2 p {
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 16px;
+  color: #222B3A;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_2 .checkbox_2 {
+  position: absolute;
+  right: 82px;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_2 .checkbox_2 input {
+  display: none;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_2 .checkbox_2 input:checked + label::before {
+  content: "\2713";
+  border-radius: 3px;
+  font-size: 25px;
+  color: #f3f3f3;
+  text-align: center;
+  background: #1092CB;
+  display: inline-block;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_2 .checkbox_2 label {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  position: relative;
+  background: #FAFAFA;
+  border: 1px solid #DADADA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_2 .checkbox_2 label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_3 {
+  height: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  border-bottom: 1.2px solid #F3F3F3;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_3 span {
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 25px;
+  height: 25px;
+  background: #F3F3F3;
+  border-radius: 3px 0px;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 16px;
+  color: #222B3A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_3 .text {
+  width: 928px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_3 .text p {
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 16px;
+  color: #222B3A;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_3 .checkbox_3 {
+  position: absolute;
+  right: 82px;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_3 .checkbox_3 input {
+  display: none;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_3 .checkbox_3 input:checked + label::before {
+  content: "\2713";
+  border-radius: 3px;
+  font-size: 25px;
+  color: #f3f3f3;
+  text-align: center;
+  background: #1092CB;
+  display: inline-block;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_3 .checkbox_3 label {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  position: relative;
+  background: #FAFAFA;
+  border: 1px solid #DADADA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_3 .checkbox_3 label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_4 {
+  height: 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  border-bottom: 1.2px solid #F3F3F3;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_4 span {
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 25px;
+  height: 25px;
+  background: #F3F3F3;
+  border-radius: 3px 0px;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 16px;
+  color: #222B3A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_4 p {
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 16px;
+  color: #222B3A;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_4 .checkbox_4 {
+  position: absolute;
+  right: 82px;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_4 .checkbox_4 input {
+  display: none;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_4 .checkbox_4 input:checked + label::before {
+  content: "\2713";
+  border-radius: 3px;
+  font-size: 25px;
+  color: #f3f3f3;
+  text-align: center;
+  background: #1092CB;
+  display: inline-block;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_4 .checkbox_4 label {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  position: relative;
+  background: #FAFAFA;
+  border: 1px solid #DADADA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.objectiv .objectiv_module .objectiv_module_block_4 .checkbox_4 label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contacts {
+  margin-top: 76px;
+  width: 100%;
+  height: 350px;
+  background: #0099DD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts .contacts_block {
+  width: 79%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "on_scl mtrl inf adr_tel";
+}
+
+.contacts .contacts_block .online_school {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: on_scl;
+}
+
+.contacts .contacts_block .online_school h4 {
+  margin-bottom: 3px;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.contacts .contacts_block .online_school div {
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+}
+
+.contacts .contacts_block .online_school p {
+  margin: 10px 0;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.contacts .contacts_block .material {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: mtrl;
+}
+
+.contacts .contacts_block .material h4 {
+  margin-bottom: 3px;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.contacts .contacts_block .material div {
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+}
+
+.contacts .contacts_block .material p {
+  margin: 10px 0;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.contacts .contacts_block .information {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: inf;
+}
+
+.contacts .contacts_block .information h4 {
+  margin-bottom: 3px;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.contacts .contacts_block .information div {
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+}
+
+.contacts .contacts_block .information p {
+  margin: 10px 0;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.contacts .contacts_block .adress_tel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: adr_tel;
+}
+
+.contacts .contacts_block .adress_tel h4 {
+  margin-bottom: 3px;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.contacts .contacts_block .adress_tel div {
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+}
+
+.contacts .contacts_block .adress_tel p {
+  margin: 10px 0;
+  font-family: "Proxima Nova Semibold", sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.creator {
+  width: 100%;
+  height: 350px;
+  background: #222B3A;
+  height: 47px;
+}
+/*# sourceMappingURL=module.css.map */
