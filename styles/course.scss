@@ -753,7 +753,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                         margin: 10px 0 0 0;
                         span{
                             color: $clrorang;
-                            margin-left: 5px;
+                            margin-left: 10px;
                             text-decoration: underline #FC890D;
                         }
                     }
@@ -785,7 +785,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                         transform: rotate(360deg);
                         div{
                             width: 72px;
-                            height: 8px;
+                            height: 9px;
                             background: linear-gradient(90deg, #0099DD 0%, #178EC2 100%);
                             border-radius: 1px;
                             

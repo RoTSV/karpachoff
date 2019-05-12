@@ -995,7 +995,7 @@
   }
   .major_thems a .major_thems_block .major_thems_block-2 h6 span {
     color: #FC880D;
-    margin-left: 5px;
+    margin-left: 10px;
     -webkit-text-decoration: underline #FC890D;
             text-decoration: underline #FC890D;
   }
@@ -1051,7 +1051,7 @@
   }
   .major_thems a .major_thems_block .major_thems_block-3 .line_2 div {
     width: 72px;
-    height: 8px;
+    height: 9px;
     background: -webkit-gradient(linear, left top, right top, from(#0099DD), to(#178EC2));
     background: linear-gradient(90deg, #0099DD 0%, #178EC2 100%);
     border-radius: 1px;
