@@ -708,10 +708,11 @@ $font_fam_reg: 'Proxima Nova Regular';
                                      "b b b b b b";
                 
                 .major_thems_block-1{
+                    margin-left: 15px;
                     grid-area: a;
                     display: flex;
                     align-items: baseline;
-                    justify-content: center;
+                    
                     p{
                         font-family: $font_fam_bolt;
                         font-size: 40px;
@@ -719,7 +720,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                     }
                 }
                 .major_thems_block-2{
-                    margin-left: 5px;
+                    margin-left: 15px;
                     height: 100%;
                     grid-area: b;
                     h4{
