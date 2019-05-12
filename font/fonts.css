@@ -35,11 +35,11 @@
 	font-style: normal;
 	}
 @font-face {
-	font-family: 'Intro Regular';
-	src: url('Intro-Regular.eot');
-	src: url('Intro-Regular.eot?#iefix') format('embedded-opentype'),
-	url('Intro-Regular.woff') format('woff'),
-	url('Intro-Regular.ttf') format('truetype');
+	font-family: 'Intro';
+	src: url('Intro.eot');
+	src: url('Intro.eot?#iefix') format('embedded-opentype'),
+	url('Intro.woff') format('woff'),
+	url('Intro.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 	}

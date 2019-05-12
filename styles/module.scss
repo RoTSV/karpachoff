@@ -8,17 +8,12 @@ $font_fam_bolt: 'Proxima Nova Bold', sans-serif;
 $font_fam_semibolt: 'Proxima Nova Semibold', sans-serif;
 $font_fam_exbolt: 'Proxima Nova Extra Bold', sans-serif;
 $font_fam_reg: 'Proxima Nova Regular',sans-serif;
-body{
-    margin: 0;
-    padding: 0;
-}
 .container{
-    max-width: 1200px;
+    max-width: 1160px;
     margin: 0 auto;
-    padding: 0 ;
+    padding: 0 20px;
 }
 .header{
-    
     height: 72px;
     box-shadow: 4px 4px 15px #00000014;
     .menu_logo{
@@ -26,38 +21,51 @@ body{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        .logo{
+            width: 184px;
+            height: 34px;
+        }
         .menu_block{
             display: flex;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
-            a{
-                margin-left: 32px;
-                height: 70px;
-                font-family: $font_fam_bolt;
-                color: $fcol;
-                font-size: $fnz;
+            margin-left: 180px;
+            height: 72px;
+            div{
+                height: 100%;
+                text-decoration: none;
                 display: flex;
                 align-items: center;
-                text-decoration: none;
-                &:hover{
-                    border-bottom: 2px solid #FC890D;
-                }   
+                a{
+                    height: 70px;
+                    margin-left: 35px;
+                    font-family: $font_fam_bolt;
+                    color: $fcol;
+                    font-size: $fnz;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    
+                    &:hover{
+                        border-bottom: 3px solid #FC890D;
+                    }   
+                }
             }
             .user{
-                margin-left: 89px;
-                margin-right: 0;
+                margin-left: 88px;
                 font-size: $fnz;
                 text-decoration: none;
                 color: $fcol;
                 font-family: $font_fam_bolt;
+                z-index: 1;
                 &:hover{
                     border-bottom: none;
                 }  
                 img{
                     margin-right: 8px;
                 }
-            } 
+            }
         }
         
     }
@@ -200,7 +208,9 @@ body{
                 border: 1px solid #222B3A;
             }
             .line_2{
-                width: 890px;
+                margin-left: 16px;
+                margin-right: 17px;
+                width: 798px;
                 height: 0px;
                 border: 2px solid #F1F1F1;
             }
@@ -210,7 +220,7 @@ body{
                 color: #222B3A;
                 margin: 0 6px 0 12px;
             }
-            i{
+            img{
                 margin-left: 17px;
             }
         }
@@ -472,15 +482,9 @@ body{
 }
 .contacts{
     margin-top: 76px;
-    width: 100%;
     height: 350px;
     background: #0099DD;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     .contacts_block{
-        width: 79%;
-        height: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
@@ -488,12 +492,13 @@ body{
         .online_school{
             grid-area: on_scl;
             h4{
-                margin-bottom: 3px;
+                margin-bottom: 18px;
                 font-family: $font_fam_bolt;
                 font-size: $fnz+8px;
                 color: #FFFFFF;
             }
             div{
+                margin-bottom: 29px;
                 width: 30px;
                 height: 3px;
                 background: #ffffff;
@@ -508,12 +513,13 @@ body{
         .material{
             grid-area: mtrl;
             h4{
-                margin-bottom: 3px;
+                margin-bottom: 18px;
                 font-family: $font_fam_bolt;
                 font-size: $fnz+8px;
                 color: #FFFFFF;
             }
             div{
+                margin-bottom: 29px;
                 width: 30px;
                 height: 3px;
                 background: #ffffff;
@@ -528,12 +534,13 @@ body{
         .information{
             grid-area: inf;
             h4{
-                margin-bottom: 3px;
+                margin-bottom: 18px;
                 font-family: $font_fam_bolt;
                 font-size: $fnz+8px;
                 color: #FFFFFF;
             }
             div{
+                margin-bottom: 29px;
                 width: 30px;
                 height: 3px;
                 background: #ffffff;
@@ -548,12 +555,13 @@ body{
         .adress_tel{
             grid-area: adr_tel;
             h4{
-                margin-bottom: 3px;
+                margin-bottom: 18px;
                 font-family: $font_fam_bolt;
                 font-size: $fnz+8px;
                 color: #FFFFFF;
             }
             div{
+                margin-bottom: 29px;
                 width: 30px;
                 height: 3px;
                 background: #ffffff;
@@ -569,7 +577,6 @@ body{
 }
 .creator{
     width: 100%;
-    height: 350px;
     background: $fcol;
     height: 47px;
 }

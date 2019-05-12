@@ -1,21 +1,16 @@
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .header {
-  width: 100%;
   height: 72px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-shadow: 4px 4px 15px #00000014;
           box-shadow: 4px 4px 15px #00000014;
 }
 
 .header .menu_logo {
-  width: 79%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,11 +46,23 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-left: 180px;
+  height: 72px;
 }
 
-.header .menu_logo .menu_block a {
-  margin-left: 35px;
+.header .menu_logo .menu_block div {
+  height: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menu_logo .menu_block div a {
   height: 70px;
+  margin-left: 35px;
   font-family: "Proxima Nova Bold";
   color: #222B3A;
   font-size: 16px;
@@ -68,11 +75,12 @@
   text-decoration: none;
 }
 
-.header .menu_logo .menu_block a:hover {
-  border-bottom: 5px solid #FC890D;
+.header .menu_logo .menu_block div a:hover {
+  border-bottom: 3px solid #FC890D;
 }
 
-.header .menu_logo .user {
+.header .menu_logo .menu_block .user {
+  margin-left: 88px;
   font-size: 16px;
   text-decoration: none;
   color: #222B3A;
@@ -80,25 +88,19 @@
   z-index: 1;
 }
 
-.header .menu_logo .user img {
+.header .menu_logo .menu_block .user:hover {
+  border-bottom: none;
+}
+
+.header .menu_logo .menu_block .user img {
   margin-right: 8px;
 }
 
 .academy {
   position: relative;
-  width: 100%;
   height: 513px;
   background: -webkit-gradient(linear, left bottom, left top, from(#296DCE), to(#296DCE));
   background: linear-gradient(0deg, #296DCE, #296DCE);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   overflow: hidden;
 }
 
@@ -108,7 +110,7 @@
   width: 2250.13px;
   height: 462.1px;
   left: -1480px;
-  bottom: -590px;
+  bottom: -625px;
   background: #ffffff12;
   -webkit-transform: rotate(-23.96deg);
           transform: rotate(-23.96deg);
@@ -121,7 +123,7 @@
   width: 1509.5px;
   height: 310px;
   left: 138.5px;
-  top: -170px;
+  top: -195px;
   background: #ffffff12;
   -webkit-transform: rotate(12.96deg);
           transform: rotate(12.96deg);
@@ -129,31 +131,34 @@
 }
 
 .academy .academy_block {
-  width: 79%;
   z-index: 3;
   position: relative;
+  height: 100%;
 }
 
 .academy .academy_block::after {
   content: url(../imgs/karpachoff.png);
   position: absolute;
   z-index: 4;
-  bottom: -69px;
-  right: 0;
+  bottom: 82px;
+  right: 100px;
 }
 
 .academy .academy_block h1 {
+  margin-top: 84px;
   font-size: 38px;
+  line-height: 53px;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: 'Intro Regular', sans-serif;
+  font-family: 'Intro', serif;
 }
 
 .academy .academy_block h2 {
+  margin-top: -20px;
   font-size: 24px;
   color: #FC880D;
   text-transform: uppercase;
-  font-family: 'Intro Regular' sans-serif;
+  font-family: 'Intro';
   line-height: 31px;
 }
 
@@ -174,10 +179,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0px 4px 4px #00000040;
-          box-shadow: 0px 4px 4px #00000040;
   border-radius: 3px;
   margin-top: 29px;
+}
+
+.academy .academy_block a:hover {
+  background: #6497f0;
 }
 
 .academy .academy_block .line {
@@ -240,26 +247,8 @@
   margin-left: 9px;
 }
 
-.cours_menu {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .cours_menu .cours_menu_block {
-  width: 79%;
-  height: 30px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +265,7 @@
   width: 22px;
   height: 0px;
   border: 1px solid #979FAD;
-  margin: 25px 14px;
+  margin: 25px 16px;
 }
 
 .cours_menu .cours_menu_block p {
@@ -292,44 +281,43 @@
 }
 
 .cours_menu .cours_menu_block_2 {
-  width: 100%;
   height: 99px;
   background: #FAFAFA;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .cours_menu .cours_menu_block_2 .cours_menu_block_2_theme {
-  width: 79%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.cours_menu .cours_menu_block_2 .cours_menu_block_2_theme div {
+.cours_menu .cours_menu_block_2 .cours_menu_block_2_theme .thems_cours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cours_menu .cours_menu_block_2 .cours_menu_block_2_theme .thems_cours div {
   width: 22px;
   height: 0px;
   border: 1px solid #979FAD;
   margin: 25px 13px 25px 0;
 }
 
-.cours_menu .cours_menu_block_2 .cours_menu_block_2_theme p {
+.cours_menu .cours_menu_block_2 .cours_menu_block_2_theme .thems_cours p {
   font-family: "Proxima Nova Bold";
   font-size: 18px;
+  margin-left: 0;
 }
 
 .cours_menu .cours_menu_block_2 .cours_menu_block_2_theme a {
@@ -337,8 +325,6 @@
   height: 44px;
   border: 1px solid #FC880D;
   border-radius: 3px;
-  position: absolute;
-  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,28 +344,13 @@
   margin-left: 15px;
 }
 
-.thems_cours {
+.major_thems {
   margin-top: 26px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.thems_cours a {
+.major_thems a {
   display: block;
   margin-top: 19px;
-  width: 79%;
   height: 203px;
   border: 1px solid #F3F3F3;
   -webkit-box-sizing: border-box;
@@ -390,7 +361,7 @@
   text-decoration: none;
 }
 
-.thems_cours a .thems_cours_block {
+.major_thems a .major_thems_block {
   height: 100%;
   display: -ms-grid;
   display: grid;
@@ -401,7 +372,7 @@
       grid-template-areas: "a b b b c";
 }
 
-.thems_cours a .thems_cours_block .thems_cours_block-1 {
+.major_thems a .major_thems_block .major_thems_block-1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: a;
@@ -416,14 +387,14 @@
           justify-content: center;
 }
 
-.thems_cours a .thems_cours_block .thems_cours_block-1 p {
+.major_thems a .major_thems_block .major_thems_block-1 p {
   margin: 15px 0 0 0;
   font-family: "Proxima Nova Bold";
   font-size: 64px;
   color: #E1E1E1;
 }
 
-.thems_cours a .thems_cours_block .thems_cours_block-2 {
+.major_thems a .major_thems_block .major_thems_block-2 {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -433,7 +404,7 @@
   grid-area: b;
 }
 
-.thems_cours a .thems_cours_block .thems_cours_block-2 h4 {
+.major_thems a .major_thems_block .major_thems_block-2 h4 {
   font-family: "Proxima Nova Extra Bold";
   font-size: 24px;
   text-transform: uppercase;
@@ -442,14 +413,18 @@
   letter-spacing: 0.02em;
 }
 
-.thems_cours a .thems_cours_block .thems_cours_block-2 h5 {
+.major_thems a .major_thems_block .major_thems_block-2 h5 {
   margin: 5px 0 0 0;
   font-family: "Proxima Nova Bold";
   font-size: 16px;
   color: #979FAD;
 }
 
-.thems_cours a .thems_cours_block .thems_cours_block-2 p {
+.major_thems a .major_thems_block .major_thems_block-2 h5 img {
+  padding-right: 8px;
+}
+
+.major_thems a .major_thems_block .major_thems_block-2 p {
   margin: 14px 0 0 0;
   font-family: "Proxima Nova Regular";
   font-size: 16px;
@@ -457,20 +432,21 @@
   line-height: 27px;
 }
 
-.thems_cours a .thems_cours_block .thems_cours_block-2 h6 {
+.major_thems a .major_thems_block .major_thems_block-2 h6 {
   font-family: "Proxima Nova Bold";
   font-size: 16px;
   color: #696969;
   margin: 15px 0 0 0;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.thems_cours a .thems_cours_block .thems_cours_block-2 h6 span {
+.major_thems a .major_thems_block .major_thems_block-2 h6 span {
   color: #FC880D;
   margin-left: 5px;
+  -webkit-text-decoration: underline #FC890D;
+          text-decoration: underline #FC890D;
 }
 
-.thems_cours a .thems_cours_block .thems_cours_block-3 {
+.major_thems a .major_thems_block .major_thems_block-3 {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   grid-area: c;
@@ -486,13 +462,13 @@
           flex-direction: column;
 }
 
-.thems_cours a .thems_cours_block .thems_cours_block-3 p {
+.major_thems a .major_thems_block .major_thems_block-3 p {
   font-family: "Proxima Nova Bold";
-  margin: 33px 0 0 0;
+  margin: 33px 0 5px 5px;
   color: #222B3A;
 }
 
-.thems_cours a .thems_cours_block .thems_cours_block-3 .line_2 {
+.major_thems a .major_thems_block .major_thems_block-3 .line_2 {
   margin: 1px 0 0 0;
   width: 15px;
   height: 121px;
@@ -514,7 +490,7 @@
           justify-content: center;
 }
 
-.thems_cours a .thems_cours_block .thems_cours_block-3 .line_2 div {
+.major_thems a .major_thems_block .major_thems_block-3 .line_2 div {
   width: 12px;
   height: 87px;
   background: #296DCE;
@@ -523,23 +499,11 @@
 
 .contacts {
   margin-top: 76px;
-  width: 100%;
   height: 350px;
   background: #0099DD;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .contacts .contacts_block {
-  width: 79%;
-  height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -556,13 +520,14 @@
 }
 
 .contacts .contacts_block .online_school h4 {
-  margin-bottom: 3px;
+  margin-bottom: 18px;
   font-family: "Proxima Nova Bold";
   font-size: 24px;
   color: #FFFFFF;
 }
 
 .contacts .contacts_block .online_school div {
+  margin-bottom: 29px;
   width: 30px;
   height: 3px;
   background: #ffffff;
@@ -582,13 +547,14 @@
 }
 
 .contacts .contacts_block .material h4 {
-  margin-bottom: 3px;
+  margin-bottom: 18px;
   font-family: "Proxima Nova Bold";
   font-size: 24px;
   color: #FFFFFF;
 }
 
 .contacts .contacts_block .material div {
+  margin-bottom: 29px;
   width: 30px;
   height: 3px;
   background: #ffffff;
@@ -608,13 +574,14 @@
 }
 
 .contacts .contacts_block .information h4 {
-  margin-bottom: 3px;
+  margin-bottom: 18px;
   font-family: "Proxima Nova Bold";
   font-size: 24px;
   color: #FFFFFF;
 }
 
 .contacts .contacts_block .information div {
+  margin-bottom: 29px;
   width: 30px;
   height: 3px;
   background: #ffffff;
@@ -634,13 +601,14 @@
 }
 
 .contacts .contacts_block .adress_tel h4 {
-  margin-bottom: 3px;
+  margin-bottom: 18px;
   font-family: "Proxima Nova Bold";
   font-size: 24px;
   color: #FFFFFF;
 }
 
 .contacts .contacts_block .adress_tel div {
+  margin-bottom: 29px;
   width: 30px;
   height: 3px;
   background: #ffffff;
@@ -655,36 +623,21 @@
 
 .creator {
   width: 100%;
-  height: 350px;
   background: #222B3A;
   height: 47px;
 }
 
-@media (min-width: 375px) and (max-width: 667px) {
+@media (min-width: 320px) and (max-width: 568px) {
   .header {
-    width: 100%;
     height: 55px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-shadow: 4px 4px 15px #00000014;
             box-shadow: 4px 4px 15px #00000014;
   }
   .header .menu_logo {
-    width: 90%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -697,66 +650,45 @@
     height: 26px;
   }
   .header .menu_logo .menu_block {
+    margin-left: 0px;
+    width: 23px;
+    height: 26px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0;
-    width: 33px;
-    height: 16px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  .header .menu_logo .menu_block a {
-    margin: 0;
+  .header .menu_logo .menu_block div {
     width: 23px;
     height: 2px;
-    font-family: none;
-    color: #222B3A;
-    font-size: 0;
-    background: #323232;
+    background: #222B3A;
     border-radius: 19px;
-    text-decoration: none;
   }
-  .header .menu_logo .menu_block a:hover {
-    border-bottom: none;
+  .header .menu_logo .menu_block div a {
+    display: none;
   }
-  .header .menu_logo .menu_block .cal {
+  .header .menu_logo .menu_block .calendar {
     width: 18px;
     height: 2px;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    background: #222B3A;
+    border-radius: 19px;
   }
-  .header .menu_logo .user {
+  .header .menu_logo .menu_block .user {
     display: none;
-    font-size: 16px;
-    text-decoration: none;
-    color: #222B3A;
-    font-family: "Proxima Nova Bold";
-    z-index: 1;
-  }
-  .header .menu_logo .user img {
-    margin-right: 8px;
   }
   .academy {
     position: relative;
-    width: 100%;
     height: 513px;
     background: -webkit-gradient(linear, left bottom, left top, from(#296DCE), to(#296DCE));
     background: linear-gradient(0deg, #296DCE, #296DCE);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     overflow: hidden;
   }
   .academy::before {
@@ -764,8 +696,8 @@
     position: absolute;
     width: 2250.13px;
     height: 462.1px;
-    left: -1845px;
-    bottom: -627px;
+    left: -1840px;
+    bottom: -615px;
     background: #ffffff12;
     -webkit-transform: rotate(-23.96deg);
             transform: rotate(-23.96deg);
@@ -777,43 +709,46 @@
     width: 1509.5px;
     height: 310px;
     left: -138.5px;
-    top: -133px;
+    top: -130px;
     background: #ffffff12;
     -webkit-transform: rotate(12.96deg);
             transform: rotate(12.96deg);
     z-index: 1;
   }
   .academy .academy_block {
-    width: 90%;
     z-index: 3;
     position: relative;
+    height: 100%;
   }
   .academy .academy_block::after {
     content: "";
     position: absolute;
+    z-index: -2;
+    bottom: 82px;
+    right: 100px;
   }
   .academy .academy_block h1 {
-    margin-top: 0px;
-    margin-bottom: 15px;
-    line-height: 45px;
-    font-size: 32px;
+    margin-top: 64px;
+    font-size: 28px;
+    line-height: 40px;
     color: #ffffff;
     text-transform: uppercase;
-    font-family: 'Intro Regular', sans-serif;
+    font-family: 'Intro', serif;
   }
   .academy .academy_block h2 {
     margin-top: 0px;
-    font-size: 22px;
+    font-size: 20px;
     color: #FC880D;
     text-transform: uppercase;
-    font-family: 'Intro Regular', sans-serif;
-    line-height: 31px;
+    font-family: 'Intro';
+    line-height: 27px;
   }
   .academy .academy_block a {
     font-size: 14px;
     text-decoration: none;
     color: #ffffff;
     font-family: "Proxima Nova Bold", sans-serif;
+    border: 1px solid #ffffff;
     width: 209px;
     height: 44px;
     display: -webkit-box;
@@ -825,13 +760,11 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 2px solid #FFFFFF;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-box-shadow: 3px 3px 12px rgba(79, 79, 79, 0.1);
-            box-shadow: 3px 3px 12px rgba(79, 79, 79, 0.1);
     border-radius: 3px;
-    margin-top: 20px;
+    margin-top: 29px;
+  }
+  .academy .academy_block a:hover {
+    background: #6497f0;
   }
   .academy .academy_block .line {
     width: 100%;
@@ -845,7 +778,7 @@
     z-index: 3;
   }
   .academy .academy_block .line div {
-    width: 198px;
+    width: 60%;
     height: 9px;
     background: #296DCE;
     border-radius: 2px;
@@ -860,12 +793,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .academy .academy_block .theme div {
-    width: 40%;
+    width: 50%;
     height: 42px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -880,35 +810,21 @@
     padding: 5px 0;
   }
   .academy .academy_block .theme div h3 {
-    font-size: 38px;
+    font-size: 32px;
     font-family: "Proxima Nova Bold", sans-serif;
     color: #ffffff;
   }
   .academy .academy_block .theme div p {
     font-family: "Proxima Nova Semibold", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     color: #ffffff;
     margin-left: 9px;
   }
-  .cours_menu {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .academy .academy_block .theme div .six {
+    margin-left: 22px;
   }
   .cours_menu .cours_menu_block {
-    width: 90%;
-    height: 30px;
+    height: 40px;
     display: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -922,7 +838,7 @@
     width: 22px;
     height: 0px;
     border: 1px solid #979FAD;
-    margin: 25px 14px;
+    margin: 25px 16px;
   }
   .cours_menu .cours_menu_block p {
     font-size: 16px;
@@ -935,53 +851,52 @@
     font-family: "Proxima Nova Bold", sans-serif;
   }
   .cours_menu .cours_menu_block_2 {
-    width: 100%;
     height: 143px;
     background: #FAFAFA;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .cours_menu .cours_menu_block_2 .cours_menu_block_2_theme {
-    width: 90%;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    position: relative;
-    margin: 0;
-    padding: 0;
   }
-  .cours_menu .cours_menu_block_2 .cours_menu_block_2_theme div {
+  .cours_menu .cours_menu_block_2 .cours_menu_block_2_theme .thems_cours {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cours_menu .cours_menu_block_2 .cours_menu_block_2_theme .thems_cours div {
     width: 22px;
     height: 0px;
-    border: 2px solid #222B3A;
-    margin: 39px 13px 25px 0;
+    border: 1px solid #222B3A;
+    margin: 25px 13px 25px 0;
   }
-  .cours_menu .cours_menu_block_2 .cours_menu_block_2_theme p {
+  .cours_menu .cours_menu_block_2 .cours_menu_block_2_theme .thems_cours p {
     font-family: "Proxima Nova Bold";
     font-size: 18px;
-    padding-top: 10px;
+    margin-left: 0;
+    color: #222B3A;
   }
   .cours_menu .cours_menu_block_2 .cours_menu_block_2_theme a {
+    margin-top: 8px;
     width: 100%;
     height: 44px;
     border: 1px solid #FC880D;
     border-radius: 3px;
-    position: absolute;
-    bottom: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -995,27 +910,11 @@
     font-size: 14px;
     font-family: "Proxima Nova Bold";
   }
-  .thems_cours {
+  .major_thems {
     margin-top: 26px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
-  .thems_cours a {
-    display: block;
-    margin-top: 3px;
-    width: 90%;
+  .major_thems a {
+    margin-top: 19px;
     height: 328px;
     border: 1px solid #F3F3F3;
     -webkit-box-sizing: border-box;
@@ -1025,17 +924,18 @@
     border-radius: 3px;
     text-decoration: none;
   }
-  .thems_cours a .thems_cours_block {
+  .major_thems a .major_thems_block {
+    width: 100%;
     height: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 107px 1fr 1fr 1fr 100px;
-        grid-template-columns: 107px 1fr 1fr 1fr 100px;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "a b b b c";
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "a c c c c c" "b b b b b b" "b b b b b b" "b b b b b b";
   }
-  .thems_cours a .thems_cours_block .thems_cours_block-1 {
+  .major_thems a .major_thems_block .major_thems_block-1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: a;
@@ -1049,127 +949,130 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .thems_cours a .thems_cours_block .thems_cours_block-1 p {
-    margin: 15px 0 0 0;
+  .major_thems a .major_thems_block .major_thems_block-1 p {
     font-family: "Proxima Nova Bold";
-    font-size: 64px;
+    font-size: 40px;
     color: #E1E1E1;
   }
-  .thems_cours a .thems_cours_block .thems_cours_block-2 {
+  .major_thems a .major_thems_block .major_thems_block-2 {
     height: 100%;
     margin: 0;
     padding: 0;
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
     grid-area: b;
   }
-  .thems_cours a .thems_cours_block .thems_cours_block-2 h4 {
+  .major_thems a .major_thems_block .major_thems_block-2 h4 {
     font-family: "Proxima Nova Extra Bold";
-    font-size: 24px;
+    font-size: 19px;
     text-transform: uppercase;
     color: #1092CB;
-    margin: 25px 0 0 0;
+    margin: 18px 0 0 0;
     letter-spacing: 0.02em;
   }
-  .thems_cours a .thems_cours_block .thems_cours_block-2 h5 {
+  .major_thems a .major_thems_block .major_thems_block-2 h5 {
     margin: 5px 0 0 0;
     font-family: "Proxima Nova Bold";
-    font-size: 16px;
+    font-size: 14px;
     color: #979FAD;
   }
-  .thems_cours a .thems_cours_block .thems_cours_block-2 p {
-    margin: 14px 0 0 0;
+  .major_thems a .major_thems_block .major_thems_block-2 h5 img {
+    padding-right: 8px;
+  }
+  .major_thems a .major_thems_block .major_thems_block-2 p {
+    margin: 10px 0 0 0;
     font-family: "Proxima Nova Regular";
-    font-size: 16px;
+    font-size: 14px;
     color: #696969;
-    line-height: 27px;
+    line-height: 24px;
   }
-  .thems_cours a .thems_cours_block .thems_cours_block-2 h6 {
+  .major_thems a .major_thems_block .major_thems_block-2 h6 {
     font-family: "Proxima Nova Bold";
-    font-size: 16px;
+    font-size: 14px;
     color: #696969;
-    margin: 15px 0 0 0;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 10px 0 0 0;
   }
-  .thems_cours a .thems_cours_block .thems_cours_block-2 h6 span {
+  .major_thems a .major_thems_block .major_thems_block-2 h6 span {
     color: #FC880D;
     margin-left: 5px;
+    -webkit-text-decoration: underline #FC890D;
+            text-decoration: underline #FC890D;
   }
-  .thems_cours a .thems_cours_block .thems_cours_block-3 {
+  .major_thems a .major_thems_block .major_thems_block-3 {
     -ms-grid-row: 1;
-    -ms-grid-column: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
     grid-area: c;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
-  .thems_cours a .thems_cours_block .thems_cours_block-3 p {
+  .major_thems a .major_thems_block .major_thems_block-3 p {
+    font-size: 14px;
     font-family: "Proxima Nova Bold";
-    margin: 33px 0 0 0;
+    margin: 15px 0 5px 10px;
     color: #222B3A;
   }
-  .thems_cours a .thems_cours_block .thems_cours_block-3 .line_2 {
-    margin: 1px 0 0 0;
-    width: 15px;
-    height: 121px;
+  .major_thems a .major_thems_block .major_thems_block-3 .line_2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin: 10px 0 0 0;
+    width: 157px;
+    height: 13px;
     background: #F3F3F3;
     border: 1px solid #F3F3F3;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 3px;
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
-  .thems_cours a .thems_cours_block .thems_cours_block-3 .line_2 div {
-    width: 12px;
-    height: 87px;
-    background: #296DCE;
-    border-radius: 2px;
+  .major_thems a .major_thems_block .major_thems_block-3 .line_2 div {
+    width: 72px;
+    height: 8px;
+    background: -webkit-gradient(linear, left top, right top, from(#0099DD), to(#178EC2));
+    background: linear-gradient(90deg, #0099DD 0%, #178EC2 100%);
+    border-radius: 1px;
   }
   .contacts {
-    margin-top: 76px;
-    width: 100%;
-    height: 350px;
+    margin-top: 56px;
+    height: 302px;
     background: #0099DD;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .contacts .contacts_block {
-    width: 79%;
-    height: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "on_scl mtrl inf adr_tel";
+        grid-template-areas: "adr_tel adr_tel adr_tel adr_tel";
   }
   .contacts .contacts_block .online_school {
+    display: none;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: on_scl;
@@ -1192,6 +1095,7 @@
     color: #FFFFFF;
   }
   .contacts .contacts_block .material {
+    display: none;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: mtrl;
@@ -1214,6 +1118,7 @@
     color: #FFFFFF;
   }
   .contacts .contacts_block .information {
+    display: none;
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: inf;
@@ -1237,11 +1142,13 @@
   }
   .contacts .contacts_block .adress_tel {
     -ms-grid-row: 1;
-    -ms-grid-column: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
     grid-area: adr_tel;
   }
   .contacts .contacts_block .adress_tel h4 {
-    margin-bottom: 3px;
+    margin-top: 48px;
+    margin-bottom: 12px;
     font-family: "Proxima Nova Bold";
     font-size: 24px;
     color: #FFFFFF;
@@ -1252,10 +1159,17 @@
     background: #ffffff;
   }
   .contacts .contacts_block .adress_tel p {
-    margin: 10px 0;
+    margin: 18px 0;
     font-family: "Proxima Nova Semibold";
     font-size: 16px;
     color: #FFFFFF;
+    line-height: 19px;
+  }
+  .contacts .contacts_block .adress_tel p::before {
+    content: url(../imgs/phone.svg);
+    margin-right: 14px;
+    position: relative;
+    top: 5px;
   }
   .creator {
     width: 100%;

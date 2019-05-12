@@ -8,15 +8,15 @@ $font_fam_bolt: 'Proxima Nova Bold';
 $font_fam_semibolt: 'Proxima Nova Semibold';
 $font_fam_exbolt: 'Proxima Nova Extra Bold';
 $font_fam_reg: 'Proxima Nova Regular';
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 .header{
-    width: 100%;
     height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     box-shadow: 4px 4px 15px #00000014;
     .menu_logo{
-        width: 79%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -31,41 +31,50 @@ $font_fam_reg: 'Proxima Nova Regular';
             flex-direction: row;
             justify-content: space-between;
             margin-left: 180px;
-            a{
-                margin-left: 35px;
-                height: 70px;
-                font-family: $font_fam_bolt;
-                color: $fcol;
-                font-size: $fnz;
+            height: 72px;
+            div{
+                height: 100%;
+                text-decoration: none;
                 display: flex;
                 align-items: center;
+                a{
+                    height: 70px;
+                    margin-left: 35px;
+                    font-family: $font_fam_bolt;
+                    color: $fcol;
+                    font-size: $fnz;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    
+                    &:hover{
+                        border-bottom: 3px solid #FC890D;
+                    }   
+                }
+            }
+            .user{
+                margin-left: 88px;
+                font-size: $fnz;
                 text-decoration: none;
+                color: $fcol;
+                font-family: $font_fam_bolt;
+                z-index: 1;
                 &:hover{
-                    border-bottom: 5px solid #FC890D;
-                }   
+                    border-bottom: none;
+                }  
+                img{
+                    margin-right: 8px;
+                }
             }
         }
-        .user{
-            font-size: $fnz;
-            text-decoration: none;
-            color: $fcol;
-            font-family: $font_fam_bolt;
-            z-index: 1;
-            img{
-                margin-right: 8px;
-            }
-        }
+        
     }
     
 }
 .academy{
     position: relative;
-    width: 100%;
     height: 513px;
     background: linear-gradient(0deg, #296DCE, #296DCE);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
     &::before{
         content: "";
@@ -73,7 +82,7 @@ $font_fam_reg: 'Proxima Nova Regular';
         width: 2250.13px;
         height: 462.1px;
         left: -1480px;
-        bottom:-590px;
+        bottom:-625px;
         background: #ffffff12;
         transform: rotate(-23.96deg);
         z-index: 2;  
@@ -84,33 +93,37 @@ $font_fam_reg: 'Proxima Nova Regular';
         width: 1509.5px;
         height: 310px;
         left: 138.5px;
-        top: -170px;
+        top: -195px;
         background: #ffffff12;
         transform: rotate(12.96deg);
         z-index: 1;   
     }
     .academy_block{
-        width: 79%;
         z-index: 3;
         position: relative;
+        height: 100%;
+        
         &::after{
             content: url(../imgs/karpachoff.png); 
             position: absolute;
             z-index: 4;
-            bottom:  -69px;
-            right: 0;
+            bottom:  82px;
+            right: 100px;
         }
         h1{
+            margin-top: 84px;
             font-size: 38px;
+            line-height: 53px;
             color: #ffffff;
             text-transform: uppercase;
-            font-family:'Intro Regular', sans-serif;
+            font-family:'Intro', serif;
         }
         h2{
+            margin-top: -20px;
             font-size: 24px;
             color: $clrorang;
             text-transform: uppercase;
-            font-family:'Intro Regular' sans-serif;
+            font-family:'Intro';
             line-height: 31px;
         }
         a{
@@ -124,9 +137,11 @@ $font_fam_reg: 'Proxima Nova Regular';
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0px 4px 4px #00000040;
             border-radius: 3px;
             margin-top: 29px;
+            &:hover{
+                background: rgb(100, 151, 240);
+            }
         }
         .line{
             width: 468px;
@@ -172,14 +187,8 @@ $font_fam_reg: 'Proxima Nova Regular';
     }
 }
 .cours_menu{
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     .cours_menu_block{
-        width: 79%;
-        height: 30px;
+        height: 40px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -187,7 +196,7 @@ $font_fam_reg: 'Proxima Nova Regular';
             width: 22px;
             height: 0px;
             border: 1px solid #979FAD;
-            margin: 25px 14px;
+            margin: 25px 16px;
         }
         p{
             font-size: $fnz;
@@ -202,35 +211,34 @@ $font_fam_reg: 'Proxima Nova Regular';
         }
     }
     .cours_menu_block_2{
-        width: 100%;
         height: 99px;
         background: #FAFAFA;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         .cours_menu_block_2_theme{
-            width: 79%;
+            height: 100%;
             display: flex;
             align-items: center;
-            justify-content: start;
-            position: relative;
-            div{
-                width: 22px;
-                height: 0px;
-                border: 1px solid #979FAD;
-                margin: 25px 13px 25px 0; 
-            }
-            p{
-                font-family: $font_fam_bolt;
-                font-size: $fnz+2px;
+            justify-content: space-between;
+            .thems_cours{
+                display: flex;
+                align-items: center;
+                div{
+                    width: 22px;
+                    height: 0px;
+                    border: 1px solid #979FAD;
+                    margin: 25px 13px 25px 0; 
+                }
+                p{
+                    font-family: $font_fam_bolt;
+                    font-size: $fnz+2px;
+                    margin-left: 0;
+                }
             }
             a{
                 width: 227px;
                 height: 44px;
                 border: 1px solid $clrorang;
                 border-radius: 3px;
-                position: absolute;
-                right: 0;
+                
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -245,30 +253,26 @@ $font_fam_reg: 'Proxima Nova Regular';
         }
     }
 }
-.thems_cours{
+.major_thems{
     margin-top: 26px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
     a{
         display: block;
         margin-top: 19px;
-        width: 79%;
         height: 203px;
         border: 1px solid #F3F3F3;
         box-sizing: border-box;
         box-shadow: 4px 4px 15px #00000008;
         border-radius: 3px;
         text-decoration: none;
-        .thems_cours_block{
+        .major_thems_block{
             height: 100%;
             display: grid;
             grid-template-columns: 107px 1fr 1fr 1fr 100px;
             grid-template-rows: 1fr ;
             grid-template-areas: "a b b b c";
-            .thems_cours_block-1{
+            
+            .major_thems_block-1{
                 grid-area: a;
                 display: flex;
                 align-items: baseline;
@@ -280,7 +284,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                     color: #E1E1E1;
                 }
             }
-            .thems_cours_block-2{
+            .major_thems_block-2{
                 height: 100%;
                 margin: 0;
                 padding: 0;
@@ -298,6 +302,9 @@ $font_fam_reg: 'Proxima Nova Regular';
                     font-family: $font_fam_bolt;
                     font-size: $fnz;
                     color: #979FAD;
+                    img{
+                        padding-right: 8px;
+                    }
                 }
                 p{
                     margin: 14px 0 0 0;
@@ -311,21 +318,22 @@ $font_fam_reg: 'Proxima Nova Regular';
                     font-size: $fnz;
                     color: #696969;
                     margin: 15px 0 0 0;
-                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    
                     span{
                         color: $clrorang;
                         margin-left: 5px;
+                        text-decoration: underline #FC890D;
                     }
                 }
             }
-            .thems_cours_block-3{
+            .major_thems_block-3{
                 grid-area: c;
                 display: flex;
                 align-items: center;
                 flex-direction: column;
                 p{
                     font-family: $font_fam_bolt;
-                    margin: 33px 0 0 0;
+                    margin: 33px 0 5px 5px;
                     color: $fcol;
                 }
                 .line_2{
@@ -354,15 +362,9 @@ $font_fam_reg: 'Proxima Nova Regular';
 }
 .contacts{
     margin-top: 76px;
-    width: 100%;
     height: 350px;
     background: #0099DD;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     .contacts_block{
-        width: 79%;
-        height: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
@@ -370,12 +372,13 @@ $font_fam_reg: 'Proxima Nova Regular';
         .online_school{
             grid-area: on_scl;
             h4{
-                margin-bottom: 3px;
+                margin-bottom: 18px;
                 font-family: $font_fam_bolt;
                 font-size: $fnz+8px;
                 color: #FFFFFF;
             }
             div{
+                margin-bottom: 29px;
                 width: 30px;
                 height: 3px;
                 background: #ffffff;
@@ -390,12 +393,13 @@ $font_fam_reg: 'Proxima Nova Regular';
         .material{
             grid-area: mtrl;
             h4{
-                margin-bottom: 3px;
+                margin-bottom: 18px;
                 font-family: $font_fam_bolt;
                 font-size: $fnz+8px;
                 color: #FFFFFF;
             }
             div{
+                margin-bottom: 29px;
                 width: 30px;
                 height: 3px;
                 background: #ffffff;
@@ -410,12 +414,13 @@ $font_fam_reg: 'Proxima Nova Regular';
         .information{
             grid-area: inf;
             h4{
-                margin-bottom: 3px;
+                margin-bottom: 18px;
                 font-family: $font_fam_bolt;
                 font-size: $fnz+8px;
                 color: #FFFFFF;
             }
             div{
+                margin-bottom: 29px;
                 width: 30px;
                 height: 3px;
                 background: #ffffff;
@@ -430,12 +435,13 @@ $font_fam_reg: 'Proxima Nova Regular';
         .adress_tel{
             grid-area: adr_tel;
             h4{
-                margin-bottom: 3px;
+                margin-bottom: 18px;
                 font-family: $font_fam_bolt;
                 font-size: $fnz+8px;
                 color: #FFFFFF;
             }
             div{
+                margin-bottom: 29px;
                 width: 30px;
                 height: 3px;
                 background: #ffffff;
@@ -451,22 +457,16 @@ $font_fam_reg: 'Proxima Nova Regular';
 }
 .creator{
     width: 100%;
-    height: 350px;
     background: $fcol;
     height: 47px;
 }
-@media (min-width: 375px) and (max-width: 667px) {
+@media (min-width: 320px) and (max-width: 568px) {
     .header{
-        width: 100%;
         height: 55px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         box-shadow: 4px 4px 15px #00000014;
         .menu_logo{
-            width: 90%;
+            height: 100%;
             display: flex;
-            flex-direction: row;
             align-items: center;
             justify-content: space-between;
             .logo{
@@ -474,62 +474,46 @@ $font_fam_reg: 'Proxima Nova Regular';
                 height: 26px;
             }
             .menu_block{
+                margin-left: 0px;
+                width: 23px;
+                height: 26px;
                 display: flex;
-                align-items: flex-end;
                 flex-direction: column;
-                margin: 0;
-                width: 33px;
-                height: 16px;
-                a{
-                    margin: 0;
+                align-items: flex-end;
+                justify-content: space-around;
+                div{
                     width: 23px;
                     height: 2px;
-                    font-family: none;
-                    color: $fcol;
-                    font-size: 0;
-                    background: #323232;
+                    background: #222B3A;
                     border-radius: 19px;
-                    text-decoration: none;
-                    &:hover{
-                        border-bottom: none;
-                    }   
+                    a{
+                        display: none; 
+                    }
                 }
-                .cal{
+                .calendar{
                     width: 18px;
                     height: 2px;
-                    align-self: flex-end;
+                    background: #222B3A;
+                    border-radius: 19px;
                 }
-            }
-            .user{
-                display: none;
-                font-size: $fnz;
-                text-decoration: none;
-                color: $fcol;
-                font-family: $font_fam_bolt;
-                z-index: 1;
-                img{
-                    margin-right: 8px;
+                .user{
+                    display: none;
                 }
-            }
-        }
-        
+            }  
+        } 
     }
     .academy{
         position: relative;
-        width: 100%;
         height: 513px;
         background: linear-gradient(0deg, #296DCE, #296DCE);
-        display: flex;
-        align-items: center;
-        justify-content: center;
         overflow: hidden;
         &::before{
             content: "";
             position: absolute;
             width: 2250.13px;
             height: 462.1px;
-            left: -1845px;
-            bottom:-627px;
+            left: -1840px;
+            bottom: -615px;
             background: #ffffff12;
             transform: rotate(-23.96deg);
             z-index: 2;  
@@ -540,51 +524,55 @@ $font_fam_reg: 'Proxima Nova Regular';
             width: 1509.5px;
             height: 310px;
             left: -138.5px;
-            top: -133px;
+            top: -130px;
             background: #ffffff12;
             transform: rotate(12.96deg);
             z-index: 1;   
         }
         .academy_block{
-            width: 90%;
             z-index: 3;
             position: relative;
+            height: 100%;
+            
             &::after{
-                content:""; 
-                position: absolute;  
+                content: ""; 
+                position: absolute;
+                z-index: -2;
+                bottom:  82px;
+                right: 100px;
             }
             h1{
-                margin-top: 0px;
-                margin-bottom: 15px;
-                line-height: 45px;
-                font-size: 32px;
+                margin-top: 64px;
+                font-size: 28px;
+                line-height: 40px;
                 color: #ffffff;
                 text-transform: uppercase;
-                font-family:'Intro Regular', sans-serif;
+                font-family:'Intro', serif;
             }
             h2{
                 margin-top: 0px;
-                font-size: 22px;
+                font-size: 20px;
                 color: $clrorang;
                 text-transform: uppercase;
-                font-family:'Intro Regular', sans-serif;
-                line-height: 31px;
+                font-family:'Intro';
+                line-height: 27px;
             }
             a{
                 font-size: 14px;
                 text-decoration: none;
                 color: #ffffff;
                 font-family: $font_fam_bolt, sans-serif;
+                border: 1px solid #ffffff;
                 width: 209px;
                 height: 44px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border: 2px solid #FFFFFF;
-                box-sizing: border-box;
-                box-shadow: 3px 3px 12px rgba(79, 79, 79, 0.1);
                 border-radius: 3px;
-                margin-top: 20px;
+                margin-top: 29px;
+                &:hover{
+                    background: rgb(100, 151, 240);
+                }
             }
             .line{
                 width: 100%;
@@ -596,7 +584,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                 margin-top: 72px;
                 z-index: 3;
                 div{
-                    width: 198px;
+                    width: 60%;
                     height: 9px;
                     background: #296DCE;
                     border-radius: 2px;
@@ -607,38 +595,34 @@ $font_fam_reg: 'Proxima Nova Regular';
                 width: 100%;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
                 div{
-                    width: 40%;
+                    width: 50%;
                     height: 42px;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     padding: 5px 0;
                     h3{
-                        font-size: 38px;
+                        font-size: 32px;
                         font-family:$font_fam_bolt, sans-serif;
                         color: #ffffff;
                     }
                     p{
                         font-family:$font_fam_semibolt, sans-serif;
-                        font-size: 14px;
+                        font-size: 12px;
                         color: #ffffff;
                         margin-left: 9px;
+                    }
+                    .six{
+                        margin-left: 22px;
                     }
                 }
             }
         }
     }
     .cours_menu{
-        width: 100%; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         .cours_menu_block{
-            width: 90%;
-            height: 30px;
+            height: 40px;
             display: none;
             flex-direction: row;
             align-items: center;
@@ -646,13 +630,12 @@ $font_fam_reg: 'Proxima Nova Regular';
                 width: 22px;
                 height: 0px;
                 border: 1px solid #979FAD;
-                margin: 25px 14px;
+                margin: 25px 16px;
             }
             p{
                 font-size: $fnz;
                 color: $fontcol;
-                font-family: $font_fam_bolt, sans-serif;
-                
+                font-family: $font_fam_bolt, sans-serif; 
             }
             .indent_cours{
                 font-size: $fnz;
@@ -661,41 +644,37 @@ $font_fam_reg: 'Proxima Nova Regular';
             }
         }
         .cours_menu_block_2{
-            width: 100%;
             height: 143px;
             background: #FAFAFA;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             .cours_menu_block_2_theme{
-                width: 90%;
                 height: 100%;
                 display: flex;
+                flex-direction: column;
                 align-items: flex-start;
                 justify-content: start;
-                position: relative;
-                margin: 0;
-                padding: 0;
-                div{
-                    width: 22px;
-                    height: 0px;
-                    border: 2px solid #222B3A;
-                    margin: 39px 13px 25px 0; 
-                }
-                p{
-                    font-family: $font_fam_bolt;
-                    font-size: $fnz+2px;
-                    padding-top: 10px;
-                    
+                .thems_cours{
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: center;
+                    div{
+                        width: 22px;
+                        height: 0px;
+                        border: 1px solid #222B3A;
+                        margin: 25px 13px 25px 0; 
+                    }
+                    p{
+                        font-family: $font_fam_bolt;
+                        font-size: $fnz+2px;
+                        margin-left: 0;
+                        color: #222B3A;
+                    }
                 }
                 a{
-                    
+                    margin-top: 8px;
                     width: 100%;
                     height: 44px;
                     border: 1px solid $clrorang;
                     border-radius: 3px;
-                    position: absolute;
-                    bottom: 25px;
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
@@ -703,111 +682,113 @@ $font_fam_reg: 'Proxima Nova Regular';
                     color: $clrorang;
                     font-size: 14px;
                     font-family: $font_fam_bolt;
-                    
                 }
             }
         }
     }
-    .thems_cours{
+    .major_thems{
         margin-top: 26px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         a{
-            display: block;
-            margin-top: 3px;
-            width: 90%;
+            margin-top: 19px;
             height: 328px;
             border: 1px solid #F3F3F3;
             box-sizing: border-box;
             box-shadow: 4px 4px 15px #00000008;
             border-radius: 3px;
             text-decoration: none;
-            .thems_cours_block{
+            .major_thems_block{
+                width: 100%;
                 height: 100%;
                 display: grid;
-                grid-template-columns: 107px 1fr 1fr 1fr 100px;
-                grid-template-rows: 1fr ;
-                grid-template-areas: "a b b b c";
-                .thems_cours_block-1{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+                grid-template-areas: "a c c c c c"
+                                     "b b b b b b"
+                                     "b b b b b b"
+                                     "b b b b b b";
+                
+                .major_thems_block-1{
                     grid-area: a;
                     display: flex;
                     align-items: baseline;
                     justify-content: center;
                     p{
-                        margin: 15px 0 0 0;
                         font-family: $font_fam_bolt;
-                        font-size: 64px;
+                        font-size: 40px;
                         color: #E1E1E1;
                     }
                 }
-                .thems_cours_block-2{
+                .major_thems_block-2{
                     height: 100%;
                     margin: 0;
                     padding: 0;
                     grid-area: b;
                     h4{
                         font-family: $font_fam_exbolt;
-                        font-size: 24px;
+                        font-size: $fnz+3;
                         text-transform: uppercase;
                         color: $fcol_blue;
-                        margin:25px 0 0 0;
+                        margin:18px 0 0 0;
                         letter-spacing: 0.02em;
                     }
                      h5{
                         margin: 5px 0 0 0;
                         font-family: $font_fam_bolt;
-                        font-size: $fnz;
+                        font-size: 14px;
                         color: #979FAD;
+                        img{
+                            padding-right: 8px;
+                        }
                     }
                     p{
-                        margin: 14px 0 0 0;
+                        margin: 10px 0 0 0;
                         font-family: $font_fam_reg;
-                        font-size: $fnz;
+                        font-size: 14px;
                         color: #696969;
-                        line-height: 27px;  
+                        line-height: 24px;  
                     }
                     h6{
                         font-family: $font_fam_bolt;
-                        font-size: $fnz;
+                        font-size: 14px;
                         color: #696969;
-                        margin: 15px 0 0 0;
-                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        margin: 10px 0 0 0;
                         span{
                             color: $clrorang;
                             margin-left: 5px;
+                            text-decoration: underline #FC890D;
                         }
                     }
                 }
-                .thems_cours_block-3{
+                .major_thems_block-3{
                     grid-area: c;
                     display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
                     align-items: center;
-                    flex-direction: column;
                     p{
+                        font-size: 14px;
                         font-family: $font_fam_bolt;
-                        margin: 33px 0 0 0;
+                        margin: 15px 0 5px 10px;
                         color: $fcol;
                     }
                     .line_2{
-                        margin: 1px 0 0 0;
-                        width: 15px;
-                        height: 121px;
-                        background: #F3F3F3;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: end;
+                        margin: 10px 0 0 0;
+                        width: 157px;
+                        height: 13px;
+                        background: #F3F3F3;;
                         border: 1px solid #F3F3F3;
                         box-sizing: border-box;
                         border-radius: 3px;
-                        transform: rotate(-180deg);
-                        display: flex;
-                        align-items: flex-start;
-                        justify-content: center;
+                        transform: rotate(360deg);
                         div{
-                            width: 12px;
-                            height: 87px;
-                            background: #296DCE;
-                            border-radius: 2px;
+                            width: 72px;
+                            height: 8px;
+                            background: linear-gradient(90deg, #0099DD 0%, #178EC2 100%);
+                            border-radius: 1px;
                             
                         }
                     }
@@ -816,21 +797,16 @@ $font_fam_reg: 'Proxima Nova Regular';
         }
     }
     .contacts{
-        margin-top: 76px;
-        width: 100%;
-        height: 350px;
+        margin-top: 56px;
+        height: 302px;
         background: #0099DD;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         .contacts_block{
-            width: 79%;
-            height: 100%;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 1fr;
-            grid-template-areas: "on_scl mtrl inf adr_tel";
+            grid-template-areas: "adr_tel adr_tel adr_tel adr_tel";
             .online_school{
+                display: none;
                 grid-area: on_scl;
                 h4{
                     margin-bottom: 3px;
@@ -851,6 +827,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                 }
             }
             .material{
+                display: none;
                 grid-area: mtrl;
                 h4{
                     margin-bottom: 3px;
@@ -871,6 +848,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                 }
             }
             .information{
+                display: none;
                 grid-area: inf;
                 h4{
                     margin-bottom: 3px;
@@ -893,7 +871,8 @@ $font_fam_reg: 'Proxima Nova Regular';
             .adress_tel{
                 grid-area: adr_tel;
                 h4{
-                    margin-bottom: 3px;
+                    margin-top: 48px;
+                    margin-bottom: 12px;
                     font-family: $font_fam_bolt;
                     font-size: $fnz+8px;
                     color: #FFFFFF;
@@ -904,10 +883,17 @@ $font_fam_reg: 'Proxima Nova Regular';
                     background: #ffffff;
                 }
                 p{
-                    margin: 10px 0;
+                    margin: 18px 0;
                     font-family: $font_fam_semibolt;
                     font-size: $fnz;
                     color: #FFFFFF; 
+                    line-height: 19px;
+                    &::before{
+                        content: url(../imgs/phone.svg);
+                        margin-right: 14px;
+                        position: relative;
+                        top: 5px;
+                    }
                 }
             }
         }

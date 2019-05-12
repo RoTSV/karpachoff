@@ -1,12 +1,7 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .container {
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .header {
@@ -31,6 +26,11 @@ body {
           justify-content: space-between;
 }
 
+.header .menu_logo .logo {
+  width: 184px;
+  height: 34px;
+}
+
 .header .menu_logo .menu_block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,11 +45,24 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 180px;
+  height: 72px;
 }
 
-.header .menu_logo .menu_block a {
-  margin-left: 32px;
+.header .menu_logo .menu_block div {
+  height: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menu_logo .menu_block div a {
   height: 70px;
+  margin-left: 35px;
   font-family: "Proxima Nova Bold", sans-serif;
   color: #222B3A;
   font-size: 16px;
@@ -62,17 +75,17 @@ body {
   text-decoration: none;
 }
 
-.header .menu_logo .menu_block a:hover {
-  border-bottom: 2px solid #FC890D;
+.header .menu_logo .menu_block div a:hover {
+  border-bottom: 3px solid #FC890D;
 }
 
 .header .menu_logo .menu_block .user {
-  margin-left: 89px;
-  margin-right: 0;
+  margin-left: 88px;
   font-size: 16px;
   text-decoration: none;
   color: #222B3A;
   font-family: "Proxima Nova Bold", sans-serif;
+  z-index: 1;
 }
 
 .header .menu_logo .menu_block .user:hover {
@@ -288,7 +301,9 @@ body {
 }
 
 .objectiv .objectiv_module .objectiv_module_a .line_2 {
-  width: 890px;
+  margin-left: 16px;
+  margin-right: 17px;
+  width: 798px;
   height: 0px;
   border: 2px solid #F1F1F1;
 }
@@ -300,7 +315,7 @@ body {
   margin: 0 6px 0 12px;
 }
 
-.objectiv .objectiv_module .objectiv_module_a i {
+.objectiv .objectiv_module .objectiv_module_a img {
   margin-left: 17px;
 }
 
@@ -665,23 +680,11 @@ body {
 
 .contacts {
   margin-top: 76px;
-  width: 100%;
   height: 350px;
   background: #0099DD;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .contacts .contacts_block {
-  width: 79%;
-  height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -698,13 +701,14 @@ body {
 }
 
 .contacts .contacts_block .online_school h4 {
-  margin-bottom: 3px;
+  margin-bottom: 18px;
   font-family: "Proxima Nova Bold", sans-serif;
   font-size: 24px;
   color: #FFFFFF;
 }
 
 .contacts .contacts_block .online_school div {
+  margin-bottom: 29px;
   width: 30px;
   height: 3px;
   background: #ffffff;
@@ -724,13 +728,14 @@ body {
 }
 
 .contacts .contacts_block .material h4 {
-  margin-bottom: 3px;
+  margin-bottom: 18px;
   font-family: "Proxima Nova Bold", sans-serif;
   font-size: 24px;
   color: #FFFFFF;
 }
 
 .contacts .contacts_block .material div {
+  margin-bottom: 29px;
   width: 30px;
   height: 3px;
   background: #ffffff;
@@ -750,13 +755,14 @@ body {
 }
 
 .contacts .contacts_block .information h4 {
-  margin-bottom: 3px;
+  margin-bottom: 18px;
   font-family: "Proxima Nova Bold", sans-serif;
   font-size: 24px;
   color: #FFFFFF;
 }
 
 .contacts .contacts_block .information div {
+  margin-bottom: 29px;
   width: 30px;
   height: 3px;
   background: #ffffff;
@@ -776,13 +782,14 @@ body {
 }
 
 .contacts .contacts_block .adress_tel h4 {
-  margin-bottom: 3px;
+  margin-bottom: 18px;
   font-family: "Proxima Nova Bold", sans-serif;
   font-size: 24px;
   color: #FFFFFF;
 }
 
 .contacts .contacts_block .adress_tel div {
+  margin-bottom: 29px;
   width: 30px;
   height: 3px;
   background: #ffffff;
@@ -797,7 +804,6 @@ body {
 
 .creator {
   width: 100%;
-  height: 350px;
   background: #222B3A;
   height: 47px;
 }
