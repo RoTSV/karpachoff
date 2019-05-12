@@ -955,9 +955,8 @@
     color: #E1E1E1;
   }
   .major_thems a .major_thems_block .major_thems_block-2 {
+    margin-left: 5px;
     height: 100%;
-    margin: 0;
-    padding: 0;
     -ms-grid-row: 2;
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
