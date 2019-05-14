@@ -21,9 +21,15 @@ $font_fam_reg: 'Proxima Nova Regular';
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        .logo{
-            width: 184px;
-            height: 34px;
+        a{
+            display: flex;
+            align-items: center;
+            height: 72px;
+            
+            .logo{
+                width: 184px;
+                height: 34px;
+            }
         }
         .menu_block{
             display: flex;
@@ -33,12 +39,11 @@ $font_fam_reg: 'Proxima Nova Regular';
             margin-left: 180px;
             height: 72px;
             div{
-                height: 100%;
                 text-decoration: none;
                 display: flex;
                 align-items: center;
                 a{
-                    height: 70px;
+                    height: 69px;
                     margin-left: 35px;
                     font-family: $font_fam_bolt;
                     color: $fcol;
@@ -46,22 +51,14 @@ $font_fam_reg: 'Proxima Nova Regular';
                     display: flex;
                     align-items: center;
                     text-decoration: none;
-                    
+                    border: 1px solid #ffffff;
                     &:hover{
-                        border-bottom: 3px solid #FC890D;
-                    }   
+                        border-bottom: 2px solid #FC890D;
+                    }  
                 }
             }
             .user{
                 margin-left: 88px;
-                font-size: $fnz;
-                text-decoration: none;
-                color: $fcol;
-                font-family: $font_fam_bolt;
-                z-index: 1;
-                &:hover{
-                    border-bottom: none;
-                }  
                 img{
                     margin-right: 8px;
                 }
@@ -198,16 +195,23 @@ $font_fam_reg: 'Proxima Nova Regular';
             border: 1px solid #979FAD;
             margin: 25px 16px;
         }
-        p{
+        a{
+            text-decoration: none;
             font-size: $fnz;
-            color: $fontcol;
-            font-family: $font_fam_bolt, sans-serif;
-            
+            color: #323232;
+            font-family: $font_fam_bolt, sans-serif; 
+            &:hover{
+                color: $fontcol;
+            }
         }
         .indent_cours{
+            text-decoration: none;
             font-size: $fnz;
             color: #323232;
             font-family: $font_fam_bolt, sans-serif;
+            &:hover{
+                color: $fontcol;
+            }
         }
     }
     .cours_menu_block_2{
@@ -238,7 +242,6 @@ $font_fam_reg: 'Proxima Nova Regular';
                 height: 44px;
                 border: 1px solid $clrorang;
                 border-radius: 3px;
-                
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -262,9 +265,13 @@ $font_fam_reg: 'Proxima Nova Regular';
         height: 203px;
         border: 1px solid #F3F3F3;
         box-sizing: border-box;
-        box-shadow: 4px 4px 15px #00000008;
+        
         border-radius: 3px;
         text-decoration: none;
+        &:hover{
+            box-shadow: 0px 0px 10px 15px #706e6e08;
+            
+        }
         .major_thems_block{
             height: 100%;
             display: grid;
@@ -460,7 +467,7 @@ $font_fam_reg: 'Proxima Nova Regular';
     background: $fcol;
     height: 47px;
 }
-@media (min-width: 320px) and (max-width: 568px) {
+@media (min-width: 319px) and (max-width: 568px) {
     .header{
         height: 55px;
         box-shadow: 4px 4px 15px #00000014;
@@ -496,9 +503,13 @@ $font_fam_reg: 'Proxima Nova Regular';
                     background: #222B3A;
                     border-radius: 19px;
                 }
-                .user{
+                .user_block{
                     display: none;
+                    .user{
+                        display: none;
+                    }
                 }
+                
             }  
         } 
     }
@@ -632,16 +643,22 @@ $font_fam_reg: 'Proxima Nova Regular';
                 border: 1px solid #979FAD;
                 margin: 25px 16px;
             }
-            p{
+            a{
+                text-decoration: none;
                 font-size: $fnz;
-                color: $fontcol;
+                color: #323232;
                 font-family: $font_fam_bolt, sans-serif; 
+                &:hover{
+                    color: $fontcol;
+                }
             }
             .indent_cours{
+                text-decoration: none;
                 font-size: $fnz;
                 color: #323232;
                 font-family: $font_fam_bolt, sans-serif;
             }
+            
         }
         .cours_menu_block_2{
             height: 143px;
@@ -690,12 +707,15 @@ $font_fam_reg: 'Proxima Nova Regular';
         margin-top: 26px;
         a{
             margin-top: 19px;
-            height: 328px;
+            height: 348px;
             border: 1px solid #F3F3F3;
             box-sizing: border-box;
-            box-shadow: 4px 4px 15px #00000008;
             border-radius: 3px;
             text-decoration: none;
+            &:hover{
+                box-shadow: 0px 0px 10px 15px #706e6e08;
+                
+            }
             .major_thems_block{
                 width: 100%;
                 height: 100%;
@@ -728,7 +748,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                         font-size: $fnz+3;
                         text-transform: uppercase;
                         color: $fcol_blue;
-                        margin:18px 0 0 0;
+                        margin:5px 0 0 0;
                         letter-spacing: 0.02em;
                     }
                      h5{
@@ -751,7 +771,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                         font-family: $font_fam_bolt;
                         font-size: 14px;
                         color: #696969;
-                        margin: 10px 0 0 0;
+                        margin: 5px 0 0 0;
                         span{
                             color: $clrorang;
                             margin-left: 10px;

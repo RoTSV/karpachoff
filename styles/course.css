@@ -26,7 +26,17 @@
           justify-content: space-between;
 }
 
-.header .menu_logo .logo {
+.header .menu_logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 72px;
+}
+
+.header .menu_logo a .logo {
   width: 184px;
   height: 34px;
 }
@@ -50,7 +60,6 @@
 }
 
 .header .menu_logo .menu_block div {
-  height: 100%;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,7 +70,7 @@
 }
 
 .header .menu_logo .menu_block div a {
-  height: 70px;
+  height: 69px;
   margin-left: 35px;
   font-family: "Proxima Nova Bold";
   color: #222B3A;
@@ -73,23 +82,15 @@
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  border: 1px solid #ffffff;
 }
 
 .header .menu_logo .menu_block div a:hover {
-  border-bottom: 3px solid #FC890D;
+  border-bottom: 2px solid #FC890D;
 }
 
 .header .menu_logo .menu_block .user {
   margin-left: 88px;
-  font-size: 16px;
-  text-decoration: none;
-  color: #222B3A;
-  font-family: "Proxima Nova Bold";
-  z-index: 1;
-}
-
-.header .menu_logo .menu_block .user:hover {
-  border-bottom: none;
 }
 
 .header .menu_logo .menu_block .user img {
@@ -268,16 +269,26 @@
   margin: 25px 16px;
 }
 
-.cours_menu .cours_menu_block p {
-  font-size: 16px;
-  color: #979FAD;
-  font-family: "Proxima Nova Bold", sans-serif;
-}
-
-.cours_menu .cours_menu_block .indent_cours {
+.cours_menu .cours_menu_block a {
+  text-decoration: none;
   font-size: 16px;
   color: #323232;
   font-family: "Proxima Nova Bold", sans-serif;
+}
+
+.cours_menu .cours_menu_block a:hover {
+  color: #979FAD;
+}
+
+.cours_menu .cours_menu_block .indent_cours {
+  text-decoration: none;
+  font-size: 16px;
+  color: #323232;
+  font-family: "Proxima Nova Bold", sans-serif;
+}
+
+.cours_menu .cours_menu_block .indent_cours:hover {
+  color: #979FAD;
 }
 
 .cours_menu .cours_menu_block_2 {
@@ -355,10 +366,13 @@
   border: 1px solid #F3F3F3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 4px 4px 15px #00000008;
-          box-shadow: 4px 4px 15px #00000008;
   border-radius: 3px;
   text-decoration: none;
+}
+
+.major_thems a:hover {
+  -webkit-box-shadow: 0px 0px 10px 15px #706e6e08;
+          box-shadow: 0px 0px 10px 15px #706e6e08;
 }
 
 .major_thems a .major_thems_block {
@@ -627,7 +641,7 @@
   height: 47px;
 }
 
-@media (min-width: 320px) and (max-width: 568px) {
+@media (min-width: 319px) and (max-width: 568px) {
   .header {
     height: 55px;
     -webkit-box-shadow: 4px 4px 15px #00000014;
@@ -681,7 +695,10 @@
     background: #222B3A;
     border-radius: 19px;
   }
-  .header .menu_logo .menu_block .user {
+  .header .menu_logo .menu_block .user_block {
+    display: none;
+  }
+  .header .menu_logo .menu_block .user_block .user {
     display: none;
   }
   .academy {
@@ -840,12 +857,17 @@
     border: 1px solid #979FAD;
     margin: 25px 16px;
   }
-  .cours_menu .cours_menu_block p {
+  .cours_menu .cours_menu_block a {
+    text-decoration: none;
     font-size: 16px;
-    color: #979FAD;
+    color: #323232;
     font-family: "Proxima Nova Bold", sans-serif;
   }
+  .cours_menu .cours_menu_block a:hover {
+    color: #979FAD;
+  }
   .cours_menu .cours_menu_block .indent_cours {
+    text-decoration: none;
     font-size: 16px;
     color: #323232;
     font-family: "Proxima Nova Bold", sans-serif;
@@ -915,14 +937,16 @@
   }
   .major_thems a {
     margin-top: 19px;
-    height: 328px;
+    height: 348px;
     border: 1px solid #F3F3F3;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    -webkit-box-shadow: 4px 4px 15px #00000008;
-            box-shadow: 4px 4px 15px #00000008;
     border-radius: 3px;
     text-decoration: none;
+  }
+  .major_thems a:hover {
+    -webkit-box-shadow: 0px 0px 10px 15px #706e6e08;
+            box-shadow: 0px 0px 10px 15px #706e6e08;
   }
   .major_thems a .major_thems_block {
     width: 100%;
@@ -966,7 +990,7 @@
     font-size: 19px;
     text-transform: uppercase;
     color: #1092CB;
-    margin: 18px 0 0 0;
+    margin: 5px 0 0 0;
     letter-spacing: 0.02em;
   }
   .major_thems a .major_thems_block .major_thems_block-2 h5 {
@@ -989,7 +1013,7 @@
     font-family: "Proxima Nova Bold";
     font-size: 14px;
     color: #696969;
-    margin: 10px 0 0 0;
+    margin: 5px 0 0 0;
   }
   .major_thems a .major_thems_block .major_thems_block-2 h6 span {
     color: #FC880D;
