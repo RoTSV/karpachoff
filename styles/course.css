@@ -507,7 +507,8 @@
 .major_thems a .major_thems_block .major_thems_block-3 .line_2 div {
   width: 12px;
   height: 87px;
-  background: #296DCE;
+  background: -webkit-gradient(linear, left top, right top, from(#0099DD), to(#178EC2));
+  background: linear-gradient(90deg, #0099DD 0%, #178EC2 100%);
   border-radius: 2px;
 }
 
@@ -528,6 +529,16 @@
 }
 
 .contacts .contacts_block .online_school {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: on_scl;
@@ -541,20 +552,37 @@
 }
 
 .contacts .contacts_block .online_school div {
-  margin-bottom: 29px;
+  margin-bottom: 19px;
   width: 30px;
   height: 3px;
   background: #ffffff;
 }
 
-.contacts .contacts_block .online_school p {
-  margin: 10px 0;
+.contacts .contacts_block .online_school a {
+  text-decoration: none;
+  margin-top: 10px;
   font-family: "Proxima Nova Semibold";
   font-size: 16px;
   color: #FFFFFF;
 }
 
+.contacts .contacts_block .online_school a:hover {
+  position: relative;
+  right: 5px;
+}
+
 .contacts .contacts_block .material {
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: mtrl;
@@ -568,20 +596,36 @@
 }
 
 .contacts .contacts_block .material div {
-  margin-bottom: 29px;
+  margin-bottom: 19px;
   width: 30px;
   height: 3px;
   background: #ffffff;
 }
 
-.contacts .contacts_block .material p {
-  margin: 10px 0;
+.contacts .contacts_block .material a {
+  text-decoration: none;
+  margin-top: 10px;
   font-family: "Proxima Nova Semibold";
   font-size: 16px;
   color: #FFFFFF;
 }
 
+.contacts .contacts_block .material a:hover {
+  position: relative;
+  right: 5px;
+}
+
 .contacts .contacts_block .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: inf;
@@ -595,20 +639,37 @@
 }
 
 .contacts .contacts_block .information div {
-  margin-bottom: 29px;
+  margin-bottom: 19px;
   width: 30px;
   height: 3px;
   background: #ffffff;
 }
 
-.contacts .contacts_block .information p {
-  margin: 10px 0;
+.contacts .contacts_block .information a {
+  display: block;
+  text-decoration: none;
+  margin-top: 10px;
   font-family: "Proxima Nova Semibold";
   font-size: 16px;
   color: #FFFFFF;
 }
 
+.contacts .contacts_block .information a:hover {
+  position: relative;
+  right: 5px;
+}
+
 .contacts .contacts_block .adress_tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: adr_tel;
@@ -622,17 +683,24 @@
 }
 
 .contacts .contacts_block .adress_tel div {
-  margin-bottom: 29px;
+  margin-bottom: 19px;
   width: 30px;
   height: 3px;
   background: #ffffff;
 }
 
-.contacts .contacts_block .adress_tel p {
-  margin: 10px 0;
+.contacts .contacts_block .adress_tel a {
+  display: block;
+  text-decoration: none;
+  margin-top: 10px;
   font-family: "Proxima Nova Semibold";
   font-size: 16px;
   color: #FFFFFF;
+}
+
+.contacts .contacts_block .adress_tel a:hover {
+  position: relative;
+  right: 5px;
 }
 
 .creator {
@@ -936,6 +1004,7 @@
     margin-top: 26px;
   }
   .major_thems a {
+    display: block;
     margin-top: 19px;
     height: 348px;
     border: 1px solid #F3F3F3;
@@ -984,17 +1053,27 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-area: b;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .major_thems a .major_thems_block .major_thems_block-2 h4 {
     font-family: "Proxima Nova Extra Bold";
     font-size: 19px;
     text-transform: uppercase;
     color: #1092CB;
-    margin: 5px 0 0 0;
+    margin: 10px 0 0 0;
     letter-spacing: 0.02em;
   }
   .major_thems a .major_thems_block .major_thems_block-2 h5 {
-    margin: 5px 0 0 0;
+    margin: 10px 0 0 0;
     font-family: "Proxima Nova Bold";
     font-size: 14px;
     color: #979FAD;
@@ -1013,7 +1092,7 @@
     font-family: "Proxima Nova Bold";
     font-size: 14px;
     color: #696969;
-    margin: 5px 0 0 0;
+    margin: 10px 0 0 0;
   }
   .major_thems a .major_thems_block .major_thems_block-2 h6 span {
     color: #FC880D;
@@ -1109,7 +1188,7 @@
     height: 3px;
     background: #ffffff;
   }
-  .contacts .contacts_block .online_school p {
+  .contacts .contacts_block .online_school a {
     margin: 10px 0;
     font-family: "Proxima Nova Semibold";
     font-size: 16px;
@@ -1132,7 +1211,7 @@
     height: 3px;
     background: #ffffff;
   }
-  .contacts .contacts_block .material p {
+  .contacts .contacts_block .material a {
     margin: 10px 0;
     font-family: "Proxima Nova Semibold";
     font-size: 16px;
@@ -1155,13 +1234,23 @@
     height: 3px;
     background: #ffffff;
   }
-  .contacts .contacts_block .information p {
+  .contacts .contacts_block .information a {
     margin: 10px 0;
     font-family: "Proxima Nova Semibold";
     font-size: 16px;
     color: #FFFFFF;
   }
   .contacts .contacts_block .adress_tel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
@@ -1179,18 +1268,23 @@
     height: 3px;
     background: #ffffff;
   }
-  .contacts .contacts_block .adress_tel p {
-    margin: 18px 0;
+  .contacts .contacts_block .adress_tel a {
+    display: block;
+    margin-top: 10px;
     font-family: "Proxima Nova Semibold";
     font-size: 16px;
     color: #FFFFFF;
     line-height: 19px;
   }
-  .contacts .contacts_block .adress_tel p::before {
+  .contacts .contacts_block .adress_tel a::before {
     content: url(../imgs/phone.svg);
     margin-right: 14px;
     position: relative;
     top: 5px;
+  }
+  .contacts .contacts_block .adress_tel a::hover {
+    position: relative;
+    right: 5px;
   }
   .creator {
     width: 100%;

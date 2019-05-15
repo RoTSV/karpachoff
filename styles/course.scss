@@ -265,7 +265,6 @@ $font_fam_reg: 'Proxima Nova Regular';
         height: 203px;
         border: 1px solid #F3F3F3;
         box-sizing: border-box;
-        
         border-radius: 3px;
         text-decoration: none;
         &:hover{
@@ -358,7 +357,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                     div{
                         width: 12px;
                         height: 87px;
-                        background: #296DCE;
+                        background: linear-gradient(90deg, #0099DD 0%, #178EC2 100%);;
                         border-radius: 2px;
                         
                     }
@@ -372,11 +371,16 @@ $font_fam_reg: 'Proxima Nova Regular';
     height: 350px;
     background: #0099DD;
     .contacts_block{
+        
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
         grid-template-areas: "on_scl mtrl inf adr_tel";
+        
         .online_school{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             grid-area: on_scl;
             h4{
                 margin-bottom: 18px;
@@ -385,19 +389,31 @@ $font_fam_reg: 'Proxima Nova Regular';
                 color: #FFFFFF;
             }
             div{
-                margin-bottom: 29px;
+                margin-bottom: 19px;
                 width: 30px;
                 height: 3px;
                 background: #ffffff;
             }
-            p{
-                margin: 10px 0;
+            a{
+                
+                text-decoration: none;
+                margin-top: 10px;
                 font-family: $font_fam_semibolt;
                 font-size: $fnz;
                 color: #FFFFFF; 
+                
+                &:hover{
+                    position: relative;
+                    right: 5px;
+                }
             }
         }
         .material{
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
             grid-area: mtrl;
             h4{
                 margin-bottom: 18px;
@@ -406,19 +422,27 @@ $font_fam_reg: 'Proxima Nova Regular';
                 color: #FFFFFF;
             }
             div{
-                margin-bottom: 29px;
+                margin-bottom: 19px;
                 width: 30px;
                 height: 3px;
                 background: #ffffff;
             }
-            p{
-                margin: 10px 0;
+            a{
+                text-decoration: none;
+                margin-top: 10px;
                 font-family: $font_fam_semibolt;
                 font-size: $fnz;
                 color: #FFFFFF; 
+                &:hover{
+                    position: relative;
+                    right: 5px;
+                }
             }
         }
         .information{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             grid-area: inf;
             h4{
                 margin-bottom: 18px;
@@ -427,19 +451,28 @@ $font_fam_reg: 'Proxima Nova Regular';
                 color: #FFFFFF;
             }
             div{
-                margin-bottom: 29px;
+                margin-bottom: 19px;
                 width: 30px;
                 height: 3px;
                 background: #ffffff;
             }
-            p{
-                margin: 10px 0;
+            a{
+                display: block;
+                text-decoration: none;
+                margin-top: 10px;
                 font-family: $font_fam_semibolt;
                 font-size: $fnz;
                 color: #FFFFFF; 
+                &:hover{
+                    position: relative;
+                    right: 5px;
+                }
             }
         }
         .adress_tel{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             grid-area: adr_tel;
             h4{
                 margin-bottom: 18px;
@@ -448,16 +481,22 @@ $font_fam_reg: 'Proxima Nova Regular';
                 color: #FFFFFF;
             }
             div{
-                margin-bottom: 29px;
+                margin-bottom: 19px;
                 width: 30px;
                 height: 3px;
                 background: #ffffff;
             }
-            p{
-                margin: 10px 0;
+            a{
+                display: block;
+                text-decoration: none;
+                margin-top: 10px;
                 font-family: $font_fam_semibolt;
                 font-size: $fnz;
                 color: #FFFFFF; 
+                &:hover{
+                    position: relative;
+                    right: 5px;
+                }
             }
         }
     }
@@ -706,6 +745,7 @@ $font_fam_reg: 'Proxima Nova Regular';
     .major_thems{
         margin-top: 26px;
         a{
+            display: block;
             margin-top: 19px;
             height: 348px;
             border: 1px solid #F3F3F3;
@@ -743,16 +783,19 @@ $font_fam_reg: 'Proxima Nova Regular';
                     margin-left: 15px;
                     height: 100%;
                     grid-area: b;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     h4{
                         font-family: $font_fam_exbolt;
                         font-size: $fnz+3;
                         text-transform: uppercase;
                         color: $fcol_blue;
-                        margin:5px 0 0 0;
+                        margin:10px 0 0 0;
                         letter-spacing: 0.02em;
                     }
                      h5{
-                        margin: 5px 0 0 0;
+                        margin: 10px 0 0 0;
                         font-family: $font_fam_bolt;
                         font-size: 14px;
                         color: #979FAD;
@@ -771,7 +814,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                         font-family: $font_fam_bolt;
                         font-size: 14px;
                         color: #696969;
-                        margin: 5px 0 0 0;
+                        margin: 10px 0 0 0;
                         span{
                             color: $clrorang;
                             margin-left: 10px;
@@ -839,7 +882,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                     height: 3px;
                     background: #ffffff;
                 }
-                p{
+                a{
                     margin: 10px 0;
                     font-family: $font_fam_semibolt;
                     font-size: $fnz;
@@ -860,7 +903,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                     height: 3px;
                     background: #ffffff;
                 }
-                p{
+                a{
                     margin: 10px 0;
                     font-family: $font_fam_semibolt;
                     font-size: $fnz;
@@ -881,7 +924,7 @@ $font_fam_reg: 'Proxima Nova Regular';
                     height: 3px;
                     background: #ffffff;
                 }
-                p{
+                a{
                     margin: 10px 0;
                     font-family: $font_fam_semibolt;
                     font-size: $fnz;
@@ -889,6 +932,9 @@ $font_fam_reg: 'Proxima Nova Regular';
                 }
             }
             .adress_tel{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
                 grid-area: adr_tel;
                 h4{
                     margin-top: 48px;
@@ -902,8 +948,9 @@ $font_fam_reg: 'Proxima Nova Regular';
                     height: 3px;
                     background: #ffffff;
                 }
-                p{
-                    margin: 18px 0;
+                a{
+                    display: block;
+                    margin-top: 10px;
                     font-family: $font_fam_semibolt;
                     font-size: $fnz;
                     color: #FFFFFF; 
@@ -913,6 +960,10 @@ $font_fam_reg: 'Proxima Nova Regular';
                         margin-right: 14px;
                         position: relative;
                         top: 5px;
+                    }
+                    &::hover{
+                        position: relative;
+                        right: 5px;
                     }
                 }
             }
